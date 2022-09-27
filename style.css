@@ -142,8 +142,8 @@ header ul li:hover a span{
 header .small-nav {
     position: absolute;
     right: 20px;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     background-color: hsla(var(--principal-color), 100%, 30%, .5);
     border-radius: 10px;
     cursor: pointer;
@@ -177,7 +177,7 @@ header .nav-activate .activate{
 
 header .small-nav .deactivate{
     transition: .2s;
-    transform: scale(1.5);
+    transform: scale(2);
 
 }
 
@@ -189,7 +189,7 @@ header .nav-activate .deactivate {
 header .small-nav .links {
     position: absolute;
     right: -20px;
-    top: 60px;
+    top: 80px;
     height: 0;
     width: 100vw;
     background-color: #00000093;
@@ -240,7 +240,7 @@ header .small-nav .links .content a .icon{
 /* MARK HOME */
 #home {
     min-height: auto;
-    width: 100vw;
+    width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.301)), url('src/Banner2.png');
     background-position: center;
     background-size: cover;
@@ -1091,7 +1091,7 @@ header .small-nav .links .content a .icon{
 
 
 /* MARK MEDIA */
-@media (min-width: 1248px) {
+@media (max-width: 1248px) {
     #team .desing-tools {
         display: none;
     }
@@ -1100,7 +1100,7 @@ header .small-nav .links .content a .icon{
         width: 800px;
     }
 }
-@media (min-width: 1100px) {
+@media (max-width: 1100px) {
     #home {
         display: flex;
         flex-direction: column;
@@ -1131,6 +1131,9 @@ header .small-nav .links .content a .icon{
 
 
 @media (min-width: 790px) {
+    header {
+        height: 100px;
+    }
     header ul {
         display: none;
     }
@@ -1198,7 +1201,7 @@ header .small-nav .links .content a .icon{
 
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     #team .active {
         min-height: 600px;
     }
